@@ -1,0 +1,42 @@
+<html>
+<head>
+        <title >Forbes top 125</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script type="text/javascript">
+            $(function(){
+                $.get('hasilscraping.json',function(obj){
+
+                    var str = "<table border=1;>";
+
+                    str+="<tr><td>No</td><td>Cover</td><td>Nama</td><td>Harta</td><td>Usia</td><td>Waktu Scraping</td></tr>";
+
+                    $.each(obj, function(n,data){
+                        str+="<tr><td>"+(n+1)+"</td>";
+                        str+='<td><img src="'+data.Gambar+'"></td>';   
+                        str+="<td>"+data.Nama+"</td>";
+                        str+="<td>"+data.Harta+"</td>";
+                        str+="<td>"+data.Usia+"</td>";
+                        str+="<td>"+data.Waktu_scrapping+"</td></tr>";
+                    });
+                    
+                    str += "</table>";
+                    $('#hasilscraping_json').html(str);
+                });
+            });
+        </script>
+</head>
+<body>
+    <body ></body>
+    <h1 style="text-align:center; border:2px solid DodgerBlue;" > Forbes Top 125</h1>
+    <style>
+        table {border:1px solid black;
+                margin-left:auto;
+                margin-right:auto;
+                padding: 5px 3px;
+                text-align: center;}
+    </style>
+    </table>
+    <div id="hasilscraping_json"></div>
+</body>
+</html>
