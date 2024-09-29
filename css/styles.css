@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    margin: 0;
+    background: #eee;
+    font-family: Besley, serif;
+}
+
+.navbar {
+    background: white;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 0 8px rgba(0,0,0,.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    align-items: center;
+    flex: 1;
+}
+
+
+
+.logo {
+
+    font-size: 2rem;
+    font-weight: 900;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 900;
+    color: black;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+    margin-right: 20px;
+    font-size: 1rem;
+}
+
+
+.about-image {
+    display: flex;
+    flex: 1 0 auto; 
+    justify-content: end;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    max-width: 350px; /* Adjust the maximum width as desired */
+    max-height: 350px; /* Adjust the maximum height as desired */
+}
+
+.about-container {
+    min-height: 100vh;
+    display: flex;
+    margin: 12px;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex: 1 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+  
+  
+  
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+  
+
+.project-container p {
+    font-size: 3rem;
+}
+
+.about-content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 0px;
+    align-items: start;
+    justify-content: flex-start;
+}
+
+.about-content p{
+    font-size: 2rem;
+    margin-bottom: 0px;
+    text-align:left;
+}
+
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+}
+
+.image-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.project-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.project-grid {
+    justify-content: space-around;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    grid-gap: 3rem;
+    margin: 50px;
+    margin-top: 0px;
+   
+}
+
+
+.project-card {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.project-card img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    align-items: center;
+}
+
