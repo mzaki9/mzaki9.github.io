@@ -1,0 +1,86 @@
+.top-container {
+  max-width: fit-content;
+  margin-inline: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.top-container h1 {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.left-container,
+.right-container {
+  flex: 1;
+}
+
+.middle-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me {
+  margin-top: 20px;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+.about-me p {
+  font-size: 20px;
+}
+
+.space {
+  height: 20px;
+}
+
+.links {
+  margin-top: 20px;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px; /* Space between the cards */
+  margin-top: 10px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 18px;
+  text-decoration: none;
+  color: #dedfd6;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background-color 0.2s, box-shadow 0.2s; /* Subtle transitions */
+  background-color: var(--secondary-bg); /* Match background color */
+  border: 1px solid var(--border-dark); /* Border styling */
+}
+
+.card i {
+  margin-right: 10px;
+}
+
+.github-card {
+  background-color: #3e4637;
+}
+
+.linkedin-card {
+  background-color: #3e4637;
+}
+
+.card:hover {
+  background-color: #4a5b47; /* Slight color change on hover */
+}
+
+.links p {
+  font-size: 20px;
+}
