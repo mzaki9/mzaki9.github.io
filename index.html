@@ -12,63 +12,107 @@
     <link rel="stylesheet" href="styles/cs.css" />
   </head>
   <body>
-    <div class="top-container">
-      <h1>Muhammad Zaki</h1>
-    </div>
+    <div class="cs-tabs">
+      <input
+        class="radiotab"
+        name="tabs"
+        tabindex="1"
+        type="radio"
+        id="tabone"
+        checked="checked"
+      />
+      <label class="label" for="tabone">Home</label>
+      <div class="panel" tabindex="1">
+        <div class="top-container">
+          <h1>Muhammad Zaki</h1>
+        </div>
 
-    <hr class="cs-hr" />
-    <div class="container">
-      <div class="left-container"></div>
-      <div class="middle-container">
-        <div class="about-me">
-          <p>
-            Hi! My name is Muhammad Zaki, currently studying Computer Science in
-            Institut Teknologi Bandung.
-          </p>
-          <div class="space"></div>
-          <p>
-            My journey in computer science started when I was fascinated by how
-            technology could solve real-world problems. Dreaming up ideas and
-            making them come true is where my passion lies. I like to exploring
-            anything about technology such as
-            <select class="cs-select" name="cars" id="cars">
-              <option value="AI">AI</option>
-              <option value="Machine Learning">Machine Learning</option>
-              <option value="Block Chain">Block Chain</option>
-              <option value="Security">Security</option>
-            </select>
-            .You can find my <b>full project list here</b>.
-          </p>
-          <div class="space"></div>
-          <p>
-            Outside of programming i enjoy playing basketball and gaming. Maybe
-            in the future we can play basketball or play game all night long
-            together
-          </p>
+        <hr class="cs-hr" />
+        <div class="container">
+          <div class="left-container"></div>
+          <div class="middle-container">
+            <div class="about-me">
+              <p>
+                Hi! My name is Muhammad Zaki, currently studying Computer
+                Science in Institut Teknologi Bandung.
+              </p>
+              <div class="space"></div>
+              <p>
+                My journey in computer science started when I was fascinated by
+                how technology could solve real-world problems. Dreaming up
+                ideas and making them come true is where my passion lies. I like
+                to exploring anything about technology such as
+                <select class="cs-select" name="cars" id="cars">
+                  <option value="AI">AI</option>
+                  <option value="Machine Learning">Machine Learning</option>
+                  <option value="Block Chain">Block Chain</option>
+                  <option value="Security">Cyber Security</option>
+                </select>
+                .You can find my <b>full project list here</b>.
+              </p>
+              <div class="space"></div>
+              <p>
+                Outside of programming i enjoy playing basketball and gaming.
+                Maybe in the future we can play basketball or play game all
+                night long together
+              </p>
 
-          <div class="links">
-            <p>Find me on:</p>
+              <div class="links">
+                <p>Find me on:</p>
 
-            <div class="card-container">
-              <a
-                href="https://github.com/mzaki9"
-                target="_blank"
-                class="card github-card"
-              >
-                <i class="fab fa-github"></i> GitHub
-              </a>
-              <a
-                href="https://www.linkedin.com/in/your-linkedin-username/"
-                target="_blank"
-                class="card linkedin-card"
-              >
-                <i class="fab fa-linkedin"></i> LinkedIn
-              </a>
+                <div class="card-container">
+                  <a
+                    href="https://github.com/mzaki9"
+                    target="_blank"
+                    class="card github-card"
+                  >
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/your-linkedin-username/"
+                    target="_blank"
+                    class="card linkedin-card"
+                  >
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
+          <div class="right-container"></div>
         </div>
       </div>
-      <div class="right-container"></div>
+      <!-- Section Project -->
+      <input
+        class="radiotab"
+        tabindex="1"
+        name="tabs"
+        type="radio"
+        id="tabtwo"
+      />
+      <label class="label" for="tabtwo">Project</label>
+      <div class="panel" tabindex="1">
+        <h1>Project</h1>
+        <p>This is where the fun beginn..</p>
+        <div class="space"></div>
+        <div class="space"></div>
+        <h2>Web Project</h2>
+        <h2>Artifial Intelligence & Machine Learning</h2>
+        <h2>Object Oriented Programming</h2>
+      </div>
+      <!-- Section IDK -->
+      <input
+        class="radiotab"
+        tabindex="1"
+        name="tabs"
+        type="radio"
+        id="tabthree"
+      />
+      <label class="label" for="tabthree">Tab Three</label>
+      <div class="panel" tabindex="1">
+        <h2>Tab Three Content</h2>
+        <p>Tab content...</p>
+      </div>
     </div>
   </body>
 </html>
